@@ -41,7 +41,7 @@ const pokemonFilter = () => {
     return pokemonArray.filter((pokemon) => {
         if ((((idSTFilter.value) / 1) <= pokemon["id"]) &
             (pokemon["id"] <= ((idSPFilter.value) / 1)) &
-            (pokemon["name"].includes(nameFilter.value)) &
+            (pokemon["name"].includes(nameFilter.value.toLowerCase())) &
             ((pokemon["types"].includes(typeFilter.value) | (typeFilter.value === "None")))
         ) {
                 return true;
