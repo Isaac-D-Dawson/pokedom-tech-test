@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./assets/pokeball.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PokéDom</title>
+  </head>
+  <body>
+    <h1>PokéDom- gotta code 'em all!</h1>
+
+    <!-- Custom filtering (Extension) -->
+    <form class="card__filtering">
+      <label for="nameFilter">Name:</label>
+      <input id="nameFilter" type="text">
+      <label for="typeFilter">Type:</label>
+      <select id="typeFilter"></select>
+
+      <div class="card__filtering--id">
+        <label for="idFilterStart">Id From:</label>
+        <input id="idFilterStart" type="number" min="1" value="1" max="151">
+        <label for="idFilterStop">To:</label>
+        <input id="idFilterStop" type="number" min="1" value="151" max="151">
+      </div>
+
+      <div class="card__id">
+
+        <label for="card__id--resultStart">Card No. from:</label>
+        <input id="card__id--resultStart" type="number" min="0" value="0" max="150">
+        <label for="card__id--resultStop">Card No. to:</label>
+        <input id="card__id--resultStop" type="number" min="0" value="151" max="151">
+      </div>
+      <input class="card__search" type="submit">
+
+    </form>
+    <!-- end extension code -->
+
+    <main class="card-container"></main>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
